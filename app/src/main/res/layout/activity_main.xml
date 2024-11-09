@@ -11,14 +11,23 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <Button
+            android:id="@+id/buttonShowRandomFlashcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Random Flashcard"
+            android:layout_centerInParent="true"
+            android:onClick="onShowRandomFlashcardClick"
+            android:layout_marginTop="50dp"/>
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/addButton"/>
+            android:layout_above="@+id/fabAddFlashcard"/>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/addButton"
+            android:id="@+id/fabAddFlashcard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
